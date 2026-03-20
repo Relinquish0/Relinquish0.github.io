@@ -1,3 +1,4 @@
+cat > _pages/home.md << 'EOF'
 ---
 layout: home
 permalink: /
