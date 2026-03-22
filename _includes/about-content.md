@@ -1,6 +1,12 @@
 <section class="resource-section">
   <div class="resource-card-grid">
-    <a class="resource-card" href="http://www.shuaigroup.net/" target="_blank" rel="noopener noreferrer">
+    <a
+      class="resource-card"
+      href="http://www.shuaigroup.net/"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-proofer-ignore
+    >
       <div class="resource-card__top">
         <h2>shuaigroup.net</h2>
         <span class="resource-card__pill">Open</span>
