@@ -1,13 +1,10 @@
-cat > _pages/home.md << 'EOF'
 ---
 layout: home
 permalink: /
 title: Home
 ---
 
-# 👋 Welcome
-
-I'm Jinjun Zeng
+# 👋 About Me
 
 
 ## 📚 EDUCATION
