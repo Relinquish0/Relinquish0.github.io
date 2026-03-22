@@ -7,17 +7,6 @@
 {%- endif -%}
 ';
 
-#avatar {
-  width: 168px;
-  height: 168px;
-}
-
-#avatar img {
-  width: 168px;
-  height: 168px;
-  object-fit: cover;
-}
-
 .profile-wrapper .site-subtitle::after {
   content: '(TC412a)';
   display: block;
@@ -31,7 +20,7 @@
 .resource-card-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .resource-card {
@@ -94,4 +83,10 @@
   font-size: 0.95rem;
   font-weight: 600;
   word-break: break-all;
+}
+
+@media (min-width: 768px) {
+  .resource-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
