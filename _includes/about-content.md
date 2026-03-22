@@ -1,11 +1,4 @@
----
-layout: home
-permalink: /
-title: Home
----
-
 # 👋 About Me
-
 
 ## 📚 EDUCATION
 
