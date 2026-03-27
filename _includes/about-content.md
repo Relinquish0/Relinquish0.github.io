@@ -29,7 +29,7 @@
         <h2>ansatz.work</h2>
         <span class="resource-card__pill">Open</span>
       </div>
-      <p>Visit the Ansatz website.</p>
+      <p>Visit Cunxi Gong's website.</p>
       <span class="resource-card__url">https://ansatz.work</span>
     </a>
 
