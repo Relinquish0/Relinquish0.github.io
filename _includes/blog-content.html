@@ -1,0 +1,29 @@
+<section class="blog-library">
+  <div class="blog-library__header">
+    <h1>Study Materials</h1>
+    <p>Curated Feishu notes and reference pages.</p>
+  </div>
+
+  <div class="blog-library__list">
+    {% for item in site.data.blog_links %}
+      <article class="blog-entry">
+        <div class="blog-entry__top">
+          <h2>
+            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+              {{ item.title }}
+            </a>
+          </h2>
+          <a class="blog-entry__button" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+            Open
+          </a>
+        </div>
+
+        {% if item.summary and item.summary != '' %}
+          <p class="blog-entry__summary">{{ item.summary }}</p>
+        {% endif %}
+
+        <p class="blog-entry__url">{{ item.url }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

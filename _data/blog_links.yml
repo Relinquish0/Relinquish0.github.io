@@ -1,0 +1,19 @@
+# Update `title` and `summary` below to change the BLOG page cards.
+# The current Feishu links redirect to a login page in this environment,
+# so the real document titles and summaries could not be read automatically.
+
+- title: "Replace With Feishu Title 01"
+  url: "https://fqalt2oatz5.feishu.cn/wiki/O38ewM1aDid6BskBakAcGFlWnud"
+  summary: ""
+
+- title: "Replace With Feishu Title 02"
+  url: "https://fqalt2oatz5.feishu.cn/wiki/E5uBw2H0MiFH3pk0YIFcXY3knyh"
+  summary: ""
+
+- title: "Replace With Feishu Title 03"
+  url: "https://fqalt2oatz5.feishu.cn/wiki/TsB0wGjZNiMSX6kso41cTK1anxe"
+  summary: ""
+
+- title: "Replace With Feishu Title 04"
+  url: "https://fqalt2oatz5.feishu.cn/wiki/YMQSwqrUmivVf3kyTgscWGThnGg"
+  summary: ""

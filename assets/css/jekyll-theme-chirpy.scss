@@ -13,6 +13,212 @@
   margin-top: 0.2rem;
 }
 
+.education-card {
+  margin-top: 2rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 1.5rem;
+  background: #fff;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
+}
+
+.education-card__header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.education-card__title {
+  display: inline-flex;
+  gap: 0.75rem;
+  align-items: center;
+  color: #1d4ed8;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.education-timeline {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  top: 1.25rem;
+  bottom: 1.25rem;
+  left: 1rem;
+  width: 2px;
+  background: rgba(148, 163, 184, 0.28);
+}
+
+.education-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.75rem 0 1.75rem;
+}
+
+.education-item:last-child {
+  padding-bottom: 0;
+}
+
+.education-item__marker {
+  position: relative;
+  z-index: 1;
+  padding-top: 0.15rem;
+}
+
+.education-item__icon {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #2563eb;
+  border-radius: 50%;
+  background: #fff;
+  color: #2563eb;
+  font-size: 0.9rem;
+}
+
+.education-item__content {
+  min-width: 0;
+}
+
+.education-item__top {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.education-item__top h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.education-item__dates {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0;
+  color: #64748b;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.education-item__degree {
+  margin: 0.75rem 0 0;
+  color: #0f172a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.education-item__meta {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.9rem 0 0;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.blog-library {
+  margin-top: 0.5rem;
+}
+
+.blog-library__header {
+  margin-bottom: 1.5rem;
+}
+
+.blog-library__header h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  font-weight: 800;
+}
+
+.blog-library__header p {
+  margin: 0.6rem 0 0;
+  color: #64748b;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.blog-library__list {
+  display: grid;
+  gap: 1rem;
+}
+
+.blog-entry {
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 1.35rem;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.07);
+}
+
+.blog-entry__top {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.blog-entry__top h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+
+.blog-entry__top h2 a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.blog-entry__top h2 a:hover {
+  text-decoration: underline;
+}
+
+.blog-entry__button {
+  flex-shrink: 0;
+  padding: 0.45rem 0.95rem;
+  border-radius: 0.75rem;
+  background: #1677ff;
+  color: #fff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.blog-entry__button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-entry__summary {
+  margin: 1rem 0 0;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.blog-entry__url {
+  margin: 1rem 0 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  word-break: break-all;
+}
+
 .resource-section {
   margin: 0 0 1rem;
 }
@@ -88,5 +294,36 @@
 @media (min-width: 768px) {
   .resource-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767.98px) {
+  .education-card {
+    padding: 1.25rem;
+  }
+
+  .education-item {
+    grid-template-columns: 2.6rem minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+
+  .education-timeline::before {
+    left: 0.86rem;
+  }
+
+  .education-item__top {
+    flex-direction: column;
+  }
+
+  .education-item__dates {
+    white-space: normal;
+  }
+
+  .blog-entry {
+    padding: 1.2rem;
+  }
+
+  .blog-entry__top {
+    flex-direction: column;
   }
 }
