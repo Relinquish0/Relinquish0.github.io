@@ -1,7 +1,7 @@
 <section class="blog-library">
   <div class="blog-library__header">
-    <h1>Study Materials</h1>
-    <p>Curated Feishu notes and reference pages.</p>
+    <h1 data-i18n-en="Tensor Network" data-i18n-zh="张量网络">Tensor Network</h1>
+    <p data-i18n-en="Personal views only." data-i18n-zh="仅代表个人观点。">Personal views only.</p>
   </div>
 
   <div class="blog-library__list">
@@ -13,7 +13,14 @@
               {{ item.title }}
             </a>
           </h2>
-          <a class="blog-entry__button" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+          <a
+            class="blog-entry__button"
+            href="{{ item.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n-en="Open"
+            data-i18n-zh="打开"
+          >
             Open
           </a>
         </div>

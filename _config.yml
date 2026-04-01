@@ -19,7 +19,7 @@ title: Jinjun Zeng
 tagline: CUHK-shenzhen
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Jinjun Zeng | Personal homepage
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -39,7 +39,7 @@ social:
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
+    - https://Relinquish0.github.io
     - https://github.com/Relinquish0
     # Uncomment below to add more social links
     # - https://www.facebook.com/username

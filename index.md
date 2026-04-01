@@ -4,13 +4,13 @@ permalink: /
 title: Home
 ---
 
-# 👋 About Me
+# <span data-i18n-en="👋 About Me" data-i18n-zh="👋 关于我">👋 About Me</span>
 
 <section class="education-card">
   <div class="education-card__header">
     <div class="education-card__title">
       <i class="fa-solid fa-school"></i>
-      <span>Education</span>
+      <span data-i18n-en="Education" data-i18n-zh="教育背景">Education</span>
     </div>
   </div>
 
