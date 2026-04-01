@@ -9,9 +9,9 @@ title: Home
 <section class="about-intro">
   <p class="about-intro__lead">
     <span
-      data-i18n-en="I am a Ph.D. student in Physics at The Chinese University of Hong Kong, Shenzhen, where I work with "
-      data-i18n-zh="我是在香港中文大学（深圳）攻读物理学博士的学生，师从 "
-    >I am a Ph.D. student in Physics at The Chinese University of Hong Kong, Shenzhen, where I work with </span>
+      data-i18n-en="I am a Ph.D. student in Physics at The Chinese University of Hong Kong, Shenzhen, working under the supervision of"
+      data-i18n-zh="我现为香港中文大学（深圳）物理学博士研究生，师从 "
+    >I am a Ph.D. student in Physics at The Chinese University of Hong Kong, Shenzhen, working under the supervision of </span>
     <a
       href="https://weitangligroup.com/"
       target="_blank"
@@ -20,9 +20,9 @@ title: Home
       data-i18n-zh="李维唐教授"
     >Prof. Weitang Li</a>
     <span
-      data-i18n-en=". My research interests lie in tensor networks and quantum dynamics, and I am particularly interested in applying accurate and efficient computational physics methods to complex physical systems."
-      data-i18n-zh="。我的研究兴趣包括张量网络与量子动力学，尤其关注将精确而高效的计算物理方法应用到复杂物理体系中。"
-    >. My research interests lie in tensor networks and quantum dynamics, and I am particularly interested in applying accurate and efficient computational physics methods to complex physical systems.</span>
+      data-i18n-en=". My research focuses on tensor network methods and quantum dynamics, with a particular interest in developing and applying accurate, efficient computational approaches to the study of complex physical systems. More broadly, I am interested in leveraging advanced numerical and theoretical tools to gain deeper insight into challenging problems in quantum many-body systems and related physical phenomena."
+      data-i18n-zh="。我的研究主要聚焦于张量网络方法与量子动力学，尤其关注发展并应用高精度、高效率的计算方法来研究复杂物理体系。更广泛而言，我希望借助先进的数值与理论工具，更深入地理解量子多体体系以及相关物理现象的挑战性问题。"
+    >. My research focuses on tensor network methods and quantum dynamics, with a particular interest in developing and applying accurate, efficient computational approaches to the study of complex physical systems. More broadly, I am interested in leveraging advanced numerical and theoretical tools to gain deeper insight into challenging problems in quantum many-body systems and related physical phenomena.</span>
   </p>
 </section>
 
@@ -65,7 +65,7 @@ title: Home
         </p>
         <p class="education-item__meta">
           <i class="fa-regular fa-user"></i>
-          <span data-i18n-en="Supervisor: Prof. Weitang Li" data-i18n-zh="导师：Weitang Li 教授">Supervisor: Prof. Weitang Li</span>
+          <span data-i18n-en="Supervisor: Prof. Weitang Li" data-i18n-zh="导师：李维唐教授">Supervisor: Prof. Weitang Li</span>
         </p>
       </div>
     </article>
