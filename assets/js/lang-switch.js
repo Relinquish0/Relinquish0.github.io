@@ -18,16 +18,12 @@
       return;
     }
 
-    const label = toggle.querySelector('.lang-toggle__label');
     const nextLabel = lang === 'zh' ? 'EN' : '中';
     const nextTitle = lang === 'zh' ? 'Switch to English' : 'Switch to Chinese';
 
-    if (label) {
-      label.textContent = nextLabel;
-    }
-
     toggle.setAttribute('title', nextTitle);
     toggle.setAttribute('aria-label', nextTitle);
+    toggle.dataset.lang = nextLabel;
   }
 
   function init() {

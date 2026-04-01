@@ -1,36 +1,74 @@
 <section class="blog-library">
-  <div class="blog-library__header">
-    <h1 data-i18n-en="Tensor Network" data-i18n-zh="张量网络">Tensor Network</h1>
-    <p data-i18n-en="Personal views only." data-i18n-zh="仅代表个人观点。">Personal views only.</p>
-  </div>
+  <section class="blog-library__section">
+    <div class="blog-library__header">
+      <h1 class="blog-library__section-title" data-i18n-en="Tensor Network" data-i18n-zh="张量网络">Tensor Network</h1>
+      <p data-i18n-en="Personal views only." data-i18n-zh="仅代表个人观点。">Personal views only.</p>
+    </div>
 
-  <div class="blog-library__list">
-    {% for item in site.data.blog_links %}
-      <article class="blog-entry">
-        <div class="blog-entry__top">
-          <h2>
-            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
-              {{ item.title }}
+    <div class="blog-library__list">
+      {% for item in site.data.blog_links %}
+        <article class="blog-entry">
+          <div class="blog-entry__top">
+            <h2>
+              <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+                {{ item.title }}
+              </a>
+            </h2>
+            <a
+              class="blog-entry__button"
+              href="{{ item.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-en="Open"
+              data-i18n-zh="打开"
+            >
+              Open
             </a>
-          </h2>
-          <a
-            class="blog-entry__button"
-            href="{{ item.url }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-i18n-en="Open"
-            data-i18n-zh="打开"
-          >
-            Open
-          </a>
-        </div>
+          </div>
 
-        {% if item.summary and item.summary != '' %}
-          <p class="blog-entry__summary">{{ item.summary }}</p>
-        {% endif %}
+          {% if item.summary and item.summary != '' %}
+            <p class="blog-entry__summary">{{ item.summary }}</p>
+          {% endif %}
 
-        <p class="blog-entry__url">{{ item.url }}</p>
-      </article>
-    {% endfor %}
-  </div>
+          <p class="blog-entry__url">{{ item.url }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="blog-library__section">
+    <div class="blog-library__header">
+      <h1 class="blog-library__section-title" data-i18n-en="PPT" data-i18n-zh="PPT">PPT</h1>
+    </div>
+
+    <div class="blog-library__list">
+      {% for item in site.data.ppt_links %}
+        <article class="blog-entry">
+          <div class="blog-entry__top">
+            <h2>
+              <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+                {{ item.title }}
+              </a>
+            </h2>
+            <a
+              class="blog-entry__button"
+              href="{{ item.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-en="Open"
+              data-i18n-zh="打开"
+            >
+              Open
+            </a>
+          </div>
+
+          {% if item.summary and item.summary != '' %}
+            <p class="blog-entry__summary">{{ item.summary }}</p>
+          {% endif %}
+
+          <p class="blog-entry__url">{{ item.url }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 </section>

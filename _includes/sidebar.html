@@ -11,8 +11,15 @@
       {%- endif -%}
     </a>
 
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <a class="site-title d-block" href="{{ '/' | relative_url }}">
+      <span data-i18n-en="{{ site.title }}" data-i18n-zh="曾锦均">{{ site.title }}</span>
+    </a>
+    <p class="site-subtitle fst-italic mb-0">
+      <span data-i18n-en="{{ site.tagline }}" data-i18n-zh="香港中文大学（深圳）">{{ site.tagline }}</span>
+    </p>
+    <p class="site-office fst-italic mb-0">
+      <span data-i18n-en="Office: TC412a" data-i18n-zh="办公室：TC412a">Office: TC412a</span>
+    </p>
   </header>
   <!-- .profile-wrapper -->
 
@@ -62,8 +69,9 @@
       aria-label="Switch to Chinese"
       id="lang-toggle"
       title="Switch to Chinese"
+      data-lang="中"
     >
-      <span class="lang-toggle__label">中</span>
+      <i class="fas fa-language"></i>
     </button>
 
     {% for entry in site.data.contact %}

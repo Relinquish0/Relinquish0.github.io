@@ -10,22 +10,10 @@
   <p>
     {{- '©' }}
     <time>{{ 'now' | date: '%Y' }}</time>
-
-    {% if site.social.links %}
-      <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
-    {% else %}
-      <em class="fst-normal">{{ site.social.name }}</em>.
-    {% endif %}
-
-    {% if site.data.locales[include.lang].copyright.brief %}
-      <span
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="{{ site.data.locales[include.lang].copyright.verbose }}"
-      >
-        {{- site.data.locales[include.lang].copyright.brief -}}
-      </span>
-    {% endif %}
+    <a href="{{ site.social.links[0] }}">
+      <span data-i18n-en="Jinjun Zeng" data-i18n-zh="曾锦均">Jinjun Zeng</span>
+    </a>.
+    <span data-i18n-en="Some rights reserved." data-i18n-zh="保留部分权利。">Some rights reserved.</span>
   </p>
 </footer>
 
