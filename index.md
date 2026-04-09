@@ -97,6 +97,10 @@ title: Home
         <p class="education-item__meta">
           <i class="fa-solid fa-building-columns"></i>
           <span data-i18n-en="School of Physics" data-i18n-zh="物理学院">School of Physics</span>
+        <p class="education-item__meta">
+          <i class="fa-regular fa-user"></i>
+          <span data-i18n-en="Supervisor: Prof. Xiao Zhang" data-i18n-zh="导师：张笑教授">Supervisor: Prof. Xiao Zhang</span>
+        </p>
         </p>
       </div>
     </article>
