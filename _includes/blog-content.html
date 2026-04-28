@@ -71,4 +71,40 @@
       {% endfor %}
     </div>
   </section>
+
+  <section class="blog-library__section">
+    <div class="blog-library__header">
+      <h1 class="blog-library__section-title" data-i18n-en="AI Application Seminar" data-i18n-zh="AI 应用研讨">AI Application Seminar</h1>
+    </div>
+
+    <div class="blog-library__list">
+      {% for item in site.data.ai_application_seminar_links %}
+        <article class="blog-entry">
+          <div class="blog-entry__top">
+            <h2>
+              <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+                {{ item.title }}
+              </a>
+            </h2>
+            <a
+              class="blog-entry__button"
+              href="{{ item.url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n-en="Open"
+              data-i18n-zh="打开"
+            >
+              Open
+            </a>
+          </div>
+
+          {% if item.summary and item.summary != '' %}
+            <p class="blog-entry__summary">{{ item.summary }}</p>
+          {% endif %}
+
+          <p class="blog-entry__url">{{ item.url }}</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 </section>
